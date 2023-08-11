@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daum 카페 클론코딩</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header><!--w: 1100 h:110-->
+        <div class="daum-header d-flex"> <!--h:40-->
+            <div class="daum-logo d-inline-block">
+                <div class="logobox cursor-pointer"></div>
+            </div>
+            <div class="mini-daum  d-inline-block ">
+                <div class="login d-inline-block cursor-pointer">
+                    <a herf="#">로그인</a>
+                </div>
+                <div class="mini-daum-service d-inline-block">
+                    
+                    <div class="mail d-inline-block cursor-pointer">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div class="site-map d-inline-block cursor-pointer">
+                        <i class="fa-solid fa-border-all"></i>
+                        <div class="site-map-layer" style="display: none;"><!-- add class when mouse hover on site-map -->
+                            <ul>
+                                <li>카페</li>
+                                <li>뉴스</li>
+                                <li>지도</li>
+                                <li>쇼핑</li>
+                            </ul>
+                            <div class="site-map-bottom-layer">
+                                <ul>
+                                    <li>블로그</li>
+                                    <li>티스토리</li>
+                                    <li>브런치</li>
+                                    <li>카카오TV</li>
+                                    <li>게임</li>
+                                </ul>
+                                <ul>
+                                    <li>스포츠</li>
+                                    <li>연예</li>
+                                    <li>영화</li>
+                                    <li>웹툰</li>
+                                    <li>멜론</li>
+                                </ul>
+                                <ul>
+                                    <li>어학사전</li>
+                                    <li>번역</li>
+                                    <li>단어장</li>
+                                    <li>맞춤법검사</li>
+                                    <li>백과사전</li>
+                                </ul>
+                                <ul>
+                                    <li>금융</li>
+                                    <li>부동산</li>
+                                    <li>자동차</li>
+                                    <li>메이커스</li>
+                                    <li>같이가치</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner-header d-flex"> <!--h:70-->
+            <div class="left-thing">
+                <div class="daum-cafe-logo d-inline-block cursor-pointer">
+                    <h1>cafe</h1> <!--cafe logo-->
+                </div>
+                <div class="daum-navi d-inline-block  cursor-pointer">
+                    <ul id="gnbcafe">
+                        <li>홈</li>
+                        <li class="hv">테이블</li>
+                        <li class="hv">팬카페</li>
+                        <li class="hv">카페랭킹</li>
+                        <li class="hv">내카페</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-thing">
+                <div class="search d-inline-block">
+                    <div class="search-option d-inline-block">
+                        <div class="option cursor-pointer" id="option">
+                            <a href="#">전체검색</a>
+                            <i class="fa-solid fa-chevron-up up-icon"></i><!--up-->
+                            <i class="fa-solid fa-chevron-down down-icon"></i><!--down-->
+                        </div>
+                        
+                        <div class="search-option-layer" style="display: none;"> <!--toggle when searchoption clicked-->
+                            <ul>
+                                <li>전체검색</li>
+                                <li>통합검색</li>
+                                <li>카페검색</li>
+                                <li>테이블검색</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <form action="get" class="d-inline-block">
+                        <input class="input-clicked" type="text" id="search-input" placeholder="검색어를 입력하세요">
+                        <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                    </form>
+                </div>
+            </div>            
+        </div>
+    </header>
+</body>
+</html>
